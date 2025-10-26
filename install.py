@@ -6,7 +6,7 @@ from zipfile import ZipFile
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 
-rDownloadURL = {"main": "http://sehara.eu:5656/Infinity/infinity.tar.gz", "sub": "http://sehara.eu:5656/Infinity/sub_infinity.tar.gz"}
+rDownloadURL = {"main": "https://github.com/sabiralipsl/xtream-black-mods-ubuntu-20/releases/download/xtream/main_xui_xoceunder.zip", "sub": "https://github.com/sabiralipsl/xtream-black-mods-ubuntu-20/releases/download/xtream/sub_xui_xoceunder.zip"}
 rPackages = ["libcurl4", "libxslt1-dev", "libgeoip-dev", "libonig-dev", "e2fsprogs", "wget", "mcrypt", "nscd", "htop", "zip", "unzip", "mc", "mariadb-server", "libpng16-16", "libzip5", "python3-paramiko", "python-is-python3"]
 rInstall = {"MAIN": "main", "LB": "sub"}
 rUpdate = {"UPDATE": "update"}
