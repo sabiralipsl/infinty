@@ -6,7 +6,7 @@ from zipfile import ZipFile
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 
-rDownloadURL = {"main": "https://github.com/sabiralipsl/xtream-black-mods-ubuntu-20/releases/download/xtream/main_xui_xoceunder.zip", "sub": "https://github.com/sabiralipsl/xtream-black-mods-ubuntu-20/releases/download/xtream/sub_xui_xoceunder.zip"}
+rDownloadURL = {"main": "http://sehara.eu:5656/Infinity/infinity.tar.gz", "sub": "http://sehara.eu:5656/Infinity/sub_infinity.tar.gz"}
 rPackages = ["libcurl4", "libxslt1-dev", "libgeoip-dev", "libonig-dev", "e2fsprogs", "wget", "mcrypt", "nscd", "htop", "zip", "unzip", "mc", "mariadb-server", "libpng16-16", "libzip5", "python3-paramiko", "python-is-python3"]
 rInstall = {"MAIN": "main", "LB": "sub"}
 rUpdate = {"UPDATE": "update"}
@@ -112,9 +112,9 @@ def install(rType="MAIN"):
 def update(rType="MAIN"):
     if rType == "UPDATE":
         printc("Enter the link of release_xyz.zip file:", col.BRIGHT_RED)
-        rlink = input('Example: https://github.com/sabiralipsl/xtream-black-mods-ubuntu-20/releases/download/xtream/release_22f.zip\n\nNow enter the link:\n\n')
+        rlink = input('Example: http://sehara.eu:5656/Infinity/update.zip\n\nNow enter the link:\n\n')
     else:
-        rlink = "https://github.com/sabiralipsl/xtream-black-mods-ubuntu-20/releases/download/xtream/release_22f.zip"
+        rlink = "http://sehara.eu:5656/Infinity/update.zip"
         printc("Downloading Software Update")  
     os.system('wget -q -O "/tmp/update.zip" "%s"' % rlink)
     if os.path.exists("/tmp/update.zip"):
